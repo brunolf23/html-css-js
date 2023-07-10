@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centro-1 {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-image: linear-gradient(to bottom left, black, yellow)
+}
+.centro-2 {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: aqua;
+    border: 5px solid black;
+    border-bottom: 20px solid yellow;
+}

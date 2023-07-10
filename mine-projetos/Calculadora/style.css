@@ -1,0 +1,49 @@
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+button {
+    margin: 10px;
+    padding: 6px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: wheat;
+    color: black;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3) inset;
+}
+
+select {
+    margin: 10px;
+    padding: 6px;
+    font-size: 20px;
+    border-radius: 4px;
+    color: black;
+}
+
+input {
+    margin: 10px;
+    padding: 6px;
+    font-size: 20px;
+    border-radius: 4px;
+    color: black;
+}
