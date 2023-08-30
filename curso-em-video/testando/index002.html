@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMIGRAÇÃO</title>
+</head>
+<body>
+    <h1>
+        Sistema de IMIGRAÇÃO
+    </h1>
+    <p>
+        Qual o seu país? <input type="text" name="txtim" id="txtim"> <input type="button" value="Consultar" onclick="consu()">
+    </p>
+
+    <div id="res"></div>
+
+    <script>
+        function consu(){
+            var txti = document.querySelector('input#txtim')
+            var res = document.querySelector('div#res')
+            res.innerHTML = `Verificando ${res}`
+            var pais = "brasil"
+
+            if (pais == 'brasil'){
+                res.innerHTML = `Você não é imigrante.`
+            }
+            else {
+                res.innerHTML = 'Você é uma imigrante.'
+            }
+        }
+        
+    </script>
+</body>
+</html>
