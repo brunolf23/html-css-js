@@ -20,12 +20,12 @@
             var txti = document.querySelector('input#txtim')
             var res = document.querySelector('div#res')
             res.innerHTML = `Verificando ${res}`
-            var pais = "brasil"
+            var pais = 'brasil'
 
             if (pais == 'brasil'){
                 res.innerHTML = `Você não é imigrante.`
             }
-            else {
+            else if(pais % brasil){
                 res.innerHTML = 'Você é uma imigrante.'
             }
         }
