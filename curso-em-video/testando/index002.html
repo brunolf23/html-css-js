@@ -10,7 +10,8 @@
         Sistema de IMIGRAÇÃO
     </h1>
     <p>
-        Qual o seu país? <input type="text" name="txtim" id="txtim"> <input type="button" value="Consultar" onclick="consu()">
+        Qual o seu país? <input type="text" name="txtim" id="txtim">
+        <input type="button" value="Consultar" onclick="consu()">
     </p>
 
     <div id="res"></div>
@@ -19,14 +20,13 @@
         function consu(){
             var txti = document.querySelector('input#txtim')
             var res = document.querySelector('div#res')
-            res.innerHTML = `Verificando ${res}`
-            var pais = 'brasil'
+            var pais = txti.value.toLowerCase()
 
-            if (pais == 'brasil'){
-                res.innerHTML = `Você não é imigrante.`
+            if (pais === 'brasil'){
+                res.innerHTML = 'Você não é imigrante.'
             }
-            else if(pais % brasil){
-                res.innerHTML = 'Você é uma imigrante.'
+            else {
+                res.innerHTML = 'Você é um(a) imigrante.'
             }
         }
         
